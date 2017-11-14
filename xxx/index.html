@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<script>
+			document.documentElement.style.fontSize=innerWidth/15+'px';
+		</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Helvetica;
+			}
+			
+			html {
+			    font-family: Helvetica;
+			    color: #333;
+			}
+			
+			body {
+				display: block;
+
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			header {
+				width: 100%;
+				height:1.8rem;
+				background: #00b38a;
+				text-align: center;
+				line-height: 1.8rem;
+				color: #fff;
+				position: relative;
+				font-size: 0.8rem;
+				box-sizing: border-box;
+			}
+			section{
+				    margin-bottom: 1.8rem;
+				    box-sizing: border-box;
+			}
+			
+			.top {
+				box-sizing: border-box;
+				border-bottom: 1px solid #e8e8e8;
+				height: 1.72rem;
+				line-height: 1.72rem;
+				color: #555;
+				font-size: 0.64rem;
+				padding: 0 0.6rem;
+				position: relative;
+			}
+			
+			.top p {
+				float: left;
+			}
+			
+			.top a {
+				float: right;
+				position: absolute;
+				right: 0.6rem;
+				top: 0;
+				display: block;
+				float: right;
+				background-color: #f5f5f5;
+				padding: 0 0.8rem;
+				height: 1.2rem;
+				line-height: 1.2rem;
+				margin-top: 0.24rem;
+				color: #00b38a;
+				border-radius: 0.6rem;
+			}
+
+			
+			section ul li {
+				height: 2.48rem;
+				padding: 0.56rem;
+				border-bottom: 1px solid #e8e8e8;
+			}
+			section .right {
+				box-sizing: border-box;
+				width: 75%;
+				float: left;
+				margin-left: 0.4rem;
+			}
+			
+			.right h4 {
+				font-size: 0.64rem;
+				margin-bottom:0.24rem;
+				width: 80%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				font-weight: 400;
+			}
+			
+			.right p {
+				margin-bottom: 0.24rem;
+				/*width: 100%;*/
+				height: 0.6rem;
+				line-height: 0.6rem;
+				font-size:14px;
+			}
+			
+			.right a {
+				display: block;
+				font-size:12px;
+				color: #888;
+			}
+			
+			.right span {
+				font-size: 0.64rem;
+				color: #00b38a;
+				float: right;
+			}
+			
+			.right p .over {
+				font-size: 0.56rem;
+				color: #333;
+				float: left;
+				width: 65%;
+				display: inline-block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			
+			section ul li img {
+				display: inline-block;
+				float: left;
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+			
+			.last {
+				/*width: 100%;*/
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				font-size: 14px;
+				background-color: #fafafa;
+				padding: 0;
+				margin: 0;
+				border-bottom: none;
+			}
+			
+			.bottom {
+				text-align: center;
+				font-size: 0.48rem;
+				margin-top: 1.2rem;
+				padding-bottom: 1.6rem;
+				color: #333;
+			}
+			
+			.bottom-one {
+				height: 1.28rem;
+				line-height: 1.28rem;
+			}
+			
+			.bottom-a {
+				color: #999;
+			}
+			footer{
+				box-sizing: border-box;
+				width: 100%;
+				height: 1.8rem;
+				line-height: 1.8rem;
+				border-top: 1px solid #e8e8e8;
+				background-color: #f6f6f6;
+				color: #c2cfcc;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				z-index: 999;
+
+			}
+			
+			footer div {
+				width: 33.3%;
+				float: left;
+				text-align: center;
+				line-height: 1.8rem;
+				position: relative;
+				font-size: 16px;
+			}
+			
+			footer .one {
+				color: #00b38a;
+				background-color: #e7f3f0;
+			}
+			
+			footer div i {
+				display: block;
+				width: 18px;
+				height: 17px;
+				position: absolute;
+				top:14px;
+				left:19px;
+				background: url(img/icon2.png) no-repeat -32px -20.5px;
+				background-size: 250px 250px;
+			}
+			
+			.two i {
+				background: url(img/icon2.png) no-repeat -14px -2.5px;
+				background-size: 250px 250px;
+			}
+			
+			.three i {
+				background: url(img/icon2.png) no-repeat -52.5px -2px;
+				background-size: 250px 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>拉勾网</header>
+		<section>
+			<div class="top">
+				<p>10秒钟定制职位</p>
+				<a><span>去登陆</span></a>
+			</div>
+			<ul>
+				<li>
+					<img src="img/CgqKkVgEgKWAdrKhAABLyOGkITM092.jpg" />
+					<div class="right">
+						<h4>蓝景信息</h4>
+						<p>
+							<span class="over">
+                        深度学习工程师 [ 成都 ]
+                        </span>
+							<span>20k-30k</span>
+						</p>
+						<a>今天 14:03</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgqKkVbqTGGAMJiHAAADw1c4PgI888.png" />
+					<div class="right">
+						<h4>国人在线</h4>
+						<p>
+							<span class="over">
+                        媒介专员[ 深圳 ]
+                        </span>
+							<span>5k-10k</span>
+						</p>
+						<a>今天 14:01</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgqKkVbqTGGAMJiHAAADw1c4PgI888.png" />
+					<div class="right">
+						<h4>国人在线</h4>
+						<p>
+							<span class="over">
+                        营销策划师[ 深圳 ]
+                        </span>
+							<span>5k-10k</span>
+						</p>
+						<a>今天 14:01</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgqKkVfgo4SAMNyDAAAK7-0-_2o804.png" />
+					<div class="right">
+						<h4>领健信息</h4>
+						<p>
+							<span class="over">
+                        
+                        城市主管-重庆-00292 [ 重庆 ]
+                    
+                        </span>
+							<span>7k-12k</span>
+						</p>
+						<a>今天 14:00</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgqKkVfgo4SAMNyDAAAK7-0-_2o804.png" />
+					<div class="right">
+						<h4>领健信息</h4>
+						<p>
+							<span class="over">
+                        
+                        城市主管-大连-00292 [ 大连 ]
+                    
+                        </span>
+							<span>7k-12k</span>
+						</p>
+						<a>今天 14:00</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgpzWlXe0tqAVcrBAABjGNEufnQ513.jpg" />
+					<div class="right">
+						<h4>英富森</h4>
+						<p>
+							<span class="over">
+                        
+                        商务专员 [ 北京]
+                    
+                        </span>
+							<span>6k-8k</span>
+						</p>
+						<a>今天 14:00</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/Cgo8PFTUXRqAUbzqAACSWmgLW88557.jpg" />
+					<div class="right">
+						<h4>弘度科技</h4>
+						<p>
+							<span class="over">
+
+                        高级算法工程师（人工智能） [ 广州 ]
+                    
+                        </span>
+							<span>20k-40k</span>
+						</p>
+						<a>今天 14:00</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgpEMlmdK9mAHhMwAAALxO00jJU575.jpg" />
+					<div class="right">
+						<h4>网易</h4>
+						<p>
+							<span class="over">
+
+                        前端开发工程师 [ 杭州 ]
+                    
+                        </span>
+							<span>9k-15k</span>
+						</p>
+						<a>今天 13:59</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/Cgp3O1gcEoyACgVoAAAKHiZY7fI954.jpg" />
+					<div class="right">
+						<h4>的卢深视</h4>
+						<p>
+							<span class="over">
+
+                     
+                        软件开发工程师 [ 杭州 ]
+                    
+                    
+                        </span>
+							<span>9k-15k</span>
+						</p>
+						<a>今天 13:59</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgotOVnJ5J6APkdmAAAMVU-_hJg925.jpg" />
+					<div class="right">
+						<h4>映贝金服</h4>
+						<p>
+							<span class="over">
+
+                        Java开发工程师 [ 杭州 ]
+                    
+                        </span>
+							<span>13k-20k</span>
+						</p>
+						<a>今天 13:59</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgqKkVcHI3-AKRvGAAApCgq-lY4455.jpg" />
+					<div class="right">
+						<h4>酷岸文化</h4>
+						<p>
+							<span class="over">
+
+                        高级文案/文案指导 [ 成都 ]
+                    
+                        </span>
+							<span>6k-10k</span>
+						</p>
+						<a>今天 13:59</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/CgpEMlm5-rqAYUBKAAAwcsqnfTM867.png" />
+					<div class="right">
+						<h4>申远空间设计</h4>
+						<p>
+							<span class="over">
+
+                        微信运营专员 [ 上海 ]
+                    
+                        </span>
+							<span>4k-8k</span>
+						</p>
+						<a>今天 13:58</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/Cgp3O1fOYG2ANXChAAC6JjQ8eIc423.jpg" />
+					<div class="right">
+						<h4>十牛科技</h4>
+						<p>
+							<span class="over">
+
+                        平面设计 [ 广州 ]
+                    
+                        </span>
+							<span>3k-4k</span>
+						</p>
+						<a>今天 13:57</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/Cgo8PFT5VuSAfoMcAAA7ke5Nh_U101.jpg" />
+					<div class="right">
+						<h4>手心游戏（手游）</h4>
+						<p>
+							<span class="over">
+
+                        网络推广[ 深圳]
+                    
+                        </span>
+							<span>3k-6k</span>
+						</p>
+						<a>今天 13:57</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/Cgo8PFVUJG2AMzC5AADTM-B257M409.jpg" />
+					<div class="right">
+						<h4>未极科技</h4>
+						<p>
+							<span class="over">
+
+                        游戏UI设计师[上海]
+                    
+                        </span>
+							<span>10k-20k</span>
+						</p>
+						<a>今天 13:53</a>
+					</div>
+				</li>
+				<li class="last">加载更多</li>
+
+			</ul>
+			<div class="bottom">
+				<p>©2015 lagou.com, all right reserved </p>
+				<div class="bottom-one">
+					<span class="bottom-a">移动版 · </span>
+					<span>电脑版 · </span>
+					<a>回顶部</a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="one">
+				<i></i>
+				<span>职位</span>
+			</div>
+			<div class="two">
+				<i></i>
+				<span>搜索</span>
+			</div>
+			<div class="three">
+				<i></i>
+				<span>我的</span>
+			</div>
+		</footer>
+	</body>
+</html>
