@@ -1,0 +1,14 @@
+html, html body .box { width: 100%; height: 100%; }
+html body, html body .box body { height: 100%; margin: 0; }
+html body .box { display: flex; flex-direction: column; }
+html body .box header { background: green; height: 50px; line-height: 50px; text-align: center; }
+html body .box section { flex: 1; overflow: auto; }
+html body .box section .bann img { width: 100%; display: block; }
+html body .box section nav { background: #F0F0F0; height: 40px; }
+html body .box section nav ul { height: 40px; display: flex; }
+html body .box section nav ul li { flex: 1; text-align: center; line-height: 40px; }
+html body .box footer { background: green; height: 50px; line-height: 50px; text-align: center; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+/*# sourceMappingURL=loadflex.css.map */

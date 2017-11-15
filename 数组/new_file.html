@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*function sum(){
+			var s=0;
+			for(var i=0;i<arguments.length;i++){
+				s=s+arguments[i];
+			}
+			return s;
+		}
+		console.log(sum(1,5,8,9,7,25,36));*/
+		/*function sum(...x){
+			var s=0;
+			for(var t of x){
+				s+=t;
+			}
+			return s;
+		}
+		console.log(sum(52,63,11));*/
+		let sum=(...x)=>{
+			let s=0;
+			for(let t of x){
+				s+=t;
+			}
+			return s;
+		}
+		console.log(sum(88,22,33))
+	</script>
+</html>
