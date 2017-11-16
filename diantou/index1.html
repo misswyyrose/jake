@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index1.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div id="box">
+			<div>
+				<img src="img/01.jpg"/>
+			</div>
+			<div>
+				<img src="img/22.jpg"/>
+			</div>
+			<div>
+				<img src="img/5.jpg"/>
+			</div>
+			<div>
+				<img src="img/6.jpg"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var box=document.getElementById('box');
+		var divs=document.getElementsByTagName("div");
+		var w=innerWidth;
+		box.addEventListener('touchstart',function(ev){
+			ev.preventDefault();
+			var posleft=this.offsetLeft;
+			var ex=ev.changedTouches[0].pageX;
+			box.addEventListener('touchmove',function(ev){
+				var dis=ev.changedTouches[0].pageX-ex;
+				box.style.left=(posleft+dis)+"px";
+			})
+			box.addEventListener('touchend',function(ev){
+				var n=Math.round(box.offsetLeft/w);
+				if(n<=-(divs.length-1)){
+					n=-(divs.length-1);
+				}
+				if(n>0){
+					n=0;
+				}
+				box.style.left=n*w+"px";
+			})
+			
+		})
+	</script>
+</html>
