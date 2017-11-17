@@ -5,6 +5,8 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index1.css"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/zep.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="box">
@@ -23,7 +25,7 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-		var box=document.getElementById('box');
+	/*	var box=document.getElementById('box');
 		var divs=document.getElementsByTagName("div");
 		var w=innerWidth;
 		box.addEventListener('touchstart',function(ev){
@@ -35,9 +37,10 @@
 				box.style.left=(posleft+dis)+"px";
 			})
 			box.addEventListener('touchend',function(ev){
+				ev.preventDefault();
 				var n=Math.round(box.offsetLeft/w);
-				if(n<=-(divs.length-1)){
-					n=-(divs.length-1);
+				if(n<=-(divs.length-2)){
+					n=-(divs.length-2);
 				}
 				if(n>0){
 					n=0;
@@ -45,6 +48,25 @@
 				box.style.left=n*w+"px";
 			})
 			
+		})*/
+		var n=0;
+		$('#box').on('swipeLeft',function(ev){
+			ev.preventDefault();
+			n++;
+			if(n==$('#box div').length){
+				n=$('#box div').length-1;
+				
+			}
+			$('#box div').css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
+		})
+		$('#box').on('swipeRight',function(ev){
+			ev.preventDefault();
+			n--;
+			if(n<0){
+				n=0;
+				
+			}
+			$('#box div').css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
 		})
 	</script>
 </html>
