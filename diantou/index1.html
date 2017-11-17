@@ -48,10 +48,14 @@
 				box.style.left=n*w+"px";
 			})
 			
+			
 		})*/
-		var n=0;
-		$('#box').on('swipeLeft',function(ev){
+		var box=document.getElementById('box');
+		box.addEventListener('touchstart',function(ev){
 			ev.preventDefault();
+		})
+		var n=0;
+		$('#box').on('swipeLeft',function(){
 			n++;
 			if(n==$('#box div').length){
 				n=$('#box div').length-1;
@@ -59,8 +63,7 @@
 			}
 			$('#box div').css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
 		})
-		$('#box').on('swipeRight',function(ev){
-			ev.preventDefault();
+		$('#box').on('swipeRight',function(){
 			n--;
 			if(n<0){
 				n=0;
