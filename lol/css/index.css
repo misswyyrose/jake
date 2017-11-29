@@ -16,7 +16,7 @@ html body div header ul li { width: 25%; float: left; position: relative; }
 html body div header ul li img { width: 30px; height: 15px; position: absolute; top: 0; left: 3px; }
 html body div header ul .a { color: #4ad2cb; position: relative; }
 html body div header ul .a a { display: block; width: 15px; height: 3px; border-radius: 3px; background: #4ad2cb; position: absolute; top: 80%; left: 35%; }
-html body div .swiper-container { width: 100%; height: 180px; }
+html body div .swiper-container { width: 100%; height: 150px; }
 html body div .swiper-container .swiper-wrapper { width: 500%; }
 html body div .swiper-container .swiper-wrapper img { width: 100%; height: 100%; }
 html body div .swiper-container .swiper-wrapper .swiper-slide { width: 100%; height: 100%; float: left; }
